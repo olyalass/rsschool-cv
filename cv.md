@@ -19,9 +19,27 @@ I believe, that my passion and ability to gain new skills will help me become a 
 
 ## Skills and Profiency:
 
-* HTML5, CSS3
-* JavaScript
-* Git, GitHub
-* VS Code
+* __HTML5, CSS3__
+* __JavaScript__
+* __Git, GitHub__
+* __VS Code__
 * C, SQL, PHP (each basic)
 * Autodesk Maya, ZBrush, Substance Painter, Adobe Photoshop
+
+## Code example:
+//will be updated
+
+## Education:
+
+* Peter the Great St.Petersburg Polytechnic University, _Linguistics_
+* HTML and CSS trainig on HTML Academy
+* JavaScript Manual on learnjavascript.ru 
+* RS Schools Course «JavaScript/Front-end» (in progress)
+
+## Languages:
+
+* __English__ - Advanced
+* __Russian__ - Native
+* __French__ - Pre-intermediate
+* __Ukranian__ - Pre-intermediate
+* __Serbian__ - Basic
