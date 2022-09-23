@@ -2,10 +2,11 @@
 ## Junior Frontend Developer
 
 ## Contact information:
-**Phone:** +381 062 979 62 99
-**E-mail:** olyalass@icloud.com
-[**Telegram**](https://t.me/olyalass)
-[**GitHub**](https://github.com/olyalass)
+*__Phone:__ +381 062 979 62 99
+*__E-mail:__ olyalass@icloud.com
+*[**Telegram**](https://t.me/olyalass)
+*[**GitHub**](https://github.com/olyalass)
+*[**Codewars**](https://www.codewars.com/users/olyalass)
 
 ## About me:
 
@@ -27,7 +28,18 @@ I believe, that my passion and ability to gain new skills will help me become a 
 * Autodesk Maya, ZBrush, Substance Painter, Adobe Photoshop
 
 ## Code example:
-//will be updated
+Basic Mathematical Operations KATA from CODEWARS: Your task is to create a function that does four basic mathematical operations.
+
+The function should take three arguments - operation(string/char), value1(number), value2(number).
+The function should return result of numbers after applying the chosen operation.
+
+``` function basicOp(operation, value1, value2)
+{
+  if (operation === "+") return value1 + value2;
+  if (operation === "-") return value1 - value2;
+  if (operation === "*") return value1 * value2
+  else return value1 / value2;
+}```
 
 ## Education:
 
