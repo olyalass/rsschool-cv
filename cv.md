@@ -2,11 +2,11 @@
 ## Junior Frontend Developer
 
 ## Contact information:
-*__Phone:__ +381 062 979 62 99
-*__E-mail:__ olyalass@icloud.com
-*[**Telegram**](https://t.me/olyalass)
-*[**GitHub**](https://github.com/olyalass)
-*[**Codewars**](https://www.codewars.com/users/olyalass)
+* __Phone:__ +381 062 979 62 99
+* __E-mail:__ olyalass@icloud.com
+* [**Telegram**](https://t.me/olyalass)
+* [**GitHub**](https://github.com/olyalass)
+* [**Codewars**](https://www.codewars.com/users/olyalass)
 
 ## About me:
 
@@ -39,7 +39,8 @@ The function should return result of numbers after applying the chosen operation
   if (operation === "-") return value1 - value2;
   if (operation === "*") return value1 * value2
   else return value1 / value2;
-}```
+}; 
+```
 
 ## Education:
 
