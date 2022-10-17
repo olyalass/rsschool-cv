@@ -2,10 +2,123 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link href="normalize.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <title>CV</title>
     </head>
     <body>
-        <img src="avatar.jpg" alt="my photo">
+        <header>
+            <div class="header_container">
+                <div class="header_logo"></div>
+                <nav>
+                    <ul class="header_nav">
+                        <li>Contacts</li>
+                        <li>Skills</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="avatar_and_title">
+                <div class="avatar_border"><img class="avatar" src="./images/avatar.jpg" alt="my_photo"></div>
+                <div class="title_container">
+                    <h1>Olga Lass</h1>
+                    <h3 class="title_subtitle">Junior Frontend Developer</h3>
+                </div>
+            </section>
+            <div class="main_container">
+                <div class="main_left">
+                    <div class="contacts_container">
+                        <div class="contacts_icons">
+                            <div class="call_icon"></div>
+                            <div class="mail_icon"></div>
+                            <div class="telegram_icon"></div>
+                            <div class="github_icon"></div>
+                            <div class="codewars_icon"></div>
+                        </div>
+                        <div class="contacts_info">
+                            <h2>Contact information:</h2>
+                            <ul>
+                                <li>Phone: +381 062 979 62 98</li>
+                                <li>E-mail: olyalass@icloud.com</li>
+                                <li><a href="https://t.me/olyalass">Telegram</a></li>
+                                <li><a href="https://github.com/olyalass">GitHub</a></li>
+                                <li><a href="https://www.codewars.com/users/olyalass">CodeWars</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills_container">
+                        <h2>Skills and Profiency:</h2>
+                        <div class="skills_list_essential">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Git, GitHub</li>
+                                <li>VS Code</li>
+                            </ul>
+                            <div class="skills_list_essential__progress">
+                                <div class="progress_bar">
+                                    <div class="progress_thumb advanced"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_thumb advanced"></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_thumb "></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_thumb "></div>
+                                </div>
+                                <div class="progress_bar">
+                                    <div class="progress_thumb intermediate"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul> <span>Extra:</span>
+                            <li>C, SQL, PHP (each basic)</li>
+                            <li>Autodesk Maya, ZBrush, Substance Painter, Adobe Photoshop</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_right">
+                    <section class="about_container">
+                        <h2 class="about_title">About me</h2>
+                        <article class="about_article">
+                            <p>I have always been interested in technologies, but decided to study human languages at the University. I had been working as an <span>English teacher</span> for 7 years until Covid lockdown, when I found out that my teenage hobby can help me make profit and started my career as a <span>3D-character Artist</span>. This job revived my interest in technologies, but I still felt that it wasn't my dream job.</p>
+                            <p>Everything became clear when my husband, who noticed my curiosity about his projects, gave me <span class="shadow-span">'Code: The Hidden Language of Computer Hardware and Software'</span> by Charles Petzold. This book revealed my true passion for IT and I started learning algorithms, computer science, languages etc like an addict.</p>
+                            <p>My first language was C, as I wanted to fully understand how programs allocate memory and practice algorithms writting my own funtcions. Then I had tried some other languages until I decided to deepen my knowledge of learning JavaScript and CSS to become a <span>frontend developer</span>.</p>
+                            <p>I believe, that <span>my passion and ability to gain new skills</span> will help me become a <span>great web developer</span>.</p>
+                        </article>
+                    </section>
+                    <div class="code_container">
+                        <h2>Code example:</h2>
+                        <h3>Human readable duration format from CODEWARS:</h3>
+                        <div class="code_task_description">
+                            <p>Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way. <br>The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds. <br> The resulting expression is made of components like 4 seconds, 1 year, etc. In general, a positive integer and one of the valid units of time, separated by a space. The unit of time is used in plural if the integer is greater than 1. <br>The components are separated by a comma and a space (", "). Except the last component, which is separated by " and ", just like it would be written in English.</p>
+                        </div>
+                        <div class="code_field">
+                            <pre>function formatDuration (seconds) {
+                                var time = { year: 31536000, day: 86400, hour: 3600, minute: 60, second: 1 },
+                                    res = [];
+                            
+                                if (seconds === 0) return 'now';
+                                
+                                for (var key in time) {
+                                if (seconds >= time[key]) {
+                                    var val = Math.floor(seconds/time[key]);
+                                    res.push(val += val > 1 ? ' ' + key + 's' : ' ' + key);
+                                    seconds = seconds % time[key];
+                                }
+                                }
+                            
+                                return res.length > 1 ? res.join(', ').replace(/,([^,]*)$/,' and'+'$1') : res[0]
+                            }</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
     </body>
 </html>
