@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="header_container">
-                <a href="https://rs.school/js/"><div class="header_logo"></div></a>
+                <a href="https://rs.school/js/"> .<div class="header_logo"></div></a>
                 <nav>
                     <ul class="header_nav">
                         <li><a href="#contacts">Contacts</a></li>
@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                         </div>
-                        <ul> <span>Extra:</span>
+                        <ul> Extra:
                             <li>C, SQL, PHP (each basic)</li>
                             <li>Autodesk Maya, ZBrush, Substance Painter, Adobe Photoshop</li>
                         </ul>
@@ -124,12 +124,12 @@
                 <div class="main_right">
                     <section class="about_container">
                         <h2 class="about_title">About me</h2>
-                        <article class="about_article">
+                        <div class="about_article">
                             <p>I have always been interested in technologies, but decided to study human languages at the University. I had been working as an <span>English teacher</span> for 7 years until Covid lockdown, when I found out that my teenage hobby can help me make profit and started my career as a <span>3D-character Artist</span>. This job revived my interest in technologies, but I still felt that it wasn't my dream job.</p>
                             <p>Everything became clear when my husband, who noticed my curiosity about his projects, gave me <span class="shadow-span">'Code: The Hidden Language of Computer Hardware and Software'</span> by Charles Petzold. This book revealed my true passion for IT and I started learning algorithms, computer science, languages etc like an addict.</p>
                             <p>My first language was C, as I wanted to fully understand how programs allocate memory and practice algorithms writting my own funtcions. Then I had tried some other languages until I decided to deepen my knowledge of learning JavaScript and CSS to become a <span>frontend developer</span>.</p>
                             <p>I believe, that <span>my passion and ability to gain new skills</span> will help me become a <span>great web developer</span>.</p>
-                        </article>
+                        </div>
                     </section>
                     <div class="code_container">
                         <h2>Code example:</h2>
@@ -141,18 +141,15 @@
                             <pre>function formatDuration (seconds) {
                                 var time = { year: 31536000, day: 86400, hour: 3600, minute: 60, second: 1 },
                                     res = [];
-                            
                                 if (seconds === 0) return 'now';
-                                
                                 for (var key in time) {
-                                if (seconds >= time[key]) {
+                                if (seconds = time[key]) {
                                     var val = Math.floor(seconds/time[key]);
-                                    res.push(val += val > 1 ? ' ' + key + 's' : ' ' + key);
+                                    res.push(val += val  1 ? ' ' + key + 's' : ' ' + key);
                                     seconds = seconds % time[key];
                                 }
                                 }
-                            
-                                return res.length > 1 ? res.join(', ').replace(/,([^,]*)$/,' and'+'$1') : res[0]
+                                return res.length  1 ? res.join(', ').replace(/,([^,]*)$/,' and'+'$1') : res[0]
                             }</pre>
                         </div>
                     </div>
