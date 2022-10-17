@@ -93,9 +93,9 @@ main {
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    filter: gray; 
-    -webkit-filter: grayscale(1); 
-    filter: grayscale(1); 
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
 }
 
 .title_container {
@@ -295,12 +295,12 @@ h3 {
 }
 
 .education_container li::before {
-    content: "\25A0"; 
-    color: var(--yellow-color); 
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1em; 
-    margin-left: -1em; 
+    content: "\25A0";
+    color: var(--yellow-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 .main_right {
@@ -380,12 +380,12 @@ span {
 }
 
 .projects_container li::before {
-    content: "\2713"; 
-    color: var(--yellow-color); 
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1em; 
-    margin-left: -1em; 
+    content: "\2713";
+    color: var(--yellow-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 footer {
