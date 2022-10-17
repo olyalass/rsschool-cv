@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="header_container">
-                <a href="https://rs.school/js/"><div class="header_logo"></div></a>
+                <a href="https://rs.school/js/"> .<div class="header_logo"></div></a>
                 <nav>
                     <ul class="header_nav">
                         <li><a href="#contacts">Contacts</a></li>
@@ -141,9 +141,7 @@
                             <pre>function formatDuration (seconds) {
                                 var time = { year: 31536000, day: 86400, hour: 3600, minute: 60, second: 1 },
                                     res = [];
-                            
                                 if (seconds === 0) return 'now';
-                                
                                 for (var key in time) {
                                 if (seconds = time[key]) {
                                     var val = Math.floor(seconds/time[key]);
@@ -151,7 +149,6 @@
                                     seconds = seconds % time[key];
                                 }
                                 }
-                            
                                 return res.length  1 ? res.join(', ').replace(/,([^,]*)$/,' and'+'$1') : res[0]
                             }</pre>
                         </div>
