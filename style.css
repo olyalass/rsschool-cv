@@ -1,0 +1,454 @@
+:root {
+    --yellow-color: rgb(249, 231, 75);
+    --gray-color: rgb(239, 239, 239);
+}
+
+body {
+    width: 100%;
+    font-family: "Tajawal", sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: var(--yellow-color);
+    z-index: 10;
+}
+
+.header_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.header_logo {
+    width: 83px;
+    height: 30px;
+    background-image: url("./images/logo-rsschool3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    margin-left: 20px;
+}
+
+.header_nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header_nav li {
+    list-style: none;
+    font-size: 1.3em;
+    font-family: "Tajawal Bold";
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.header_nav a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header_nav a:hover {
+    color: white;
+}
+
+main {
+    margin-top: 80px;
+    padding-top: 20px;
+}
+
+.avatar_and_title {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    width: 90%;
+    gap: 30px;
+    max-width: 1024px;
+}
+
+.avatar_border {
+    position: relative;
+    height:0px;
+    width:0px;
+    border-radius: 50%;
+    border: 130px solid white;
+    border-left: 130px solid var(--yellow-color);
+    border-right: 130px solid var(--yellow-color);
+    margin: 0 auto;
+}
+
+.avatar {
+    position: absolute;
+    left: -120px;
+    top: -120px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    filter: gray; 
+    -webkit-filter: grayscale(1); 
+    filter: grayscale(1); 
+}
+
+.title_container {
+    position: relative;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.title_subtitle {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    bottom: 55px;
+    background-color: white;
+}
+
+h1 {
+    display: block;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Silkscreen";
+    font-size: 4em;
+    border: 3px solid black;
+    padding: 30px;
+}
+
+h2 {
+    display: block;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Silkscreen";
+    color: black;
+}
+
+h3 {
+    display: block;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-family: "Tajawal Bold";
+}
+
+.main_container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    max-width: 1024px;
+}
+
+.contacts_container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 10px;
+}
+
+.contacts_info h2 {}
+
+.contacts_icons {
+    margin-top: 19.92px;
+    padding-top: 68px;
+    background: var(--yellow-color);
+}
+
+.contacts_icons div {
+    background-position: center center;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 4px;
+}
+
+.call_icon {
+    background-image: url("./images/call.png");
+}
+
+.contacts_icons .call_icon, .contacts_icons .github_icon, .contacts_icons .codewars_icon {
+    background-size: 50% 50%;
+}
+
+.mail_icon {
+    background-image: url("./images/mail.png");
+}
+
+.telegram_icon {
+    background-image: url("./images/telegram.png");
+}
+
+.github_icon {
+    background-image: url("./images/github.png");
+}
+
+.codewars_icon {
+    background-image: url("./images/codewars.png");
+}
+
+.contacts_info ul {
+    padding-left: 0;
+}
+
+.contacts_info ul {
+    margin-bottom: 0;
+}
+
+.contacts_info li {
+    list-style: none;
+    font-family: "Tajawal Bold";
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.contacts_info li:last-child {
+    margin-bottom: 0;
+}
+
+.contacts_info a {
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contacts_info a:hover {
+    color: var(--yellow-color);
+}
+
+.skills_container ul {
+    padding-left: 0;
+}
+
+.skills_container li {
+    list-style: none;
+    font-family: "Tajawal Bold";
+    margin-bottom: 7px;
+}
+
+.skills_list_essential {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+}
+
+.skills_list_essential__progress {
+    margin-top: 18px;
+}
+
+.progress_bar {
+    background-color: var(--gray-color);
+    border-radius: 10px;
+    width: 100%;
+    height: 8px;
+    border: 1px solid var(--yellow-color);
+    padding: 2px;
+    margin-bottom: 11px;
+}
+
+.progress_thumb {
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    width: 25%;
+    height: 8px;
+}
+
+.intermediate {
+    width: 50%;
+}
+
+.advanced {
+    width: 75%;
+}
+
+.prof {
+    width: 100%;
+}
+
+.divider {
+    width: 70%;
+    margin: 10px auto;
+    height: 2px;
+    background-color: black;
+}
+
+.education_container ul{
+    padding-left: 10px;
+}
+
+.education_container li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.education_container li::before {
+    content: "\25A0"; 
+    color: var(--yellow-color); 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+.main_right {
+    overflow: hidden;
+}
+
+.about_title {
+    color: var(--yellow-color);
+    text-shadow: 2px 2px black;
+}
+
+.about_article {
+    border-left: 3px dashed var(--yellow-color);
+    border-right: 3px dashed var(--yellow-color);
+    padding: 0 10px;
+}
+
+span {
+    font-family: "Tajawal Bold";
+}
+
+.shadow-span {
+    color: var(--yellow-color);
+    text-shadow: 1px 1px black;
+}
+
+.code_container {
+    background-color: var(--yellow-color);
+    padding: 15px;
+}
+
+.code_task_description {
+    height: 83px;
+    overflow: scroll;
+    cursor: ns-resize;
+    margin-bottom: 20px;
+    border: 2px dashed white;
+    padding: 0 10px;
+}
+
+.code_task_description p {
+    margin: 0;
+}
+
+.code_field {
+    padding: 5px;
+    overflow: scroll;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    cursor: ew-resize;
+}
+
+.projects_container {
+
+    padding: 10px;
+}
+
+.projects_container ul {
+    padding-left: 15px;
+    list-style: none;
+}
+
+.projects_container li {
+    margin-bottom: 10px;
+    font-family: "Tajawal Bold";
+}
+
+.projects_container a:hover {
+    color: var(--yellow-color);
+}
+
+.projects_container a {
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.projects_container li::before {
+    content: "\2713"; 
+    color: var(--yellow-color); 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+footer {
+    width: 100%;
+    background-color: var(--yellow-color);
+    height: 100px;
+}
+
+.footer_container {
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.footer_info {
+    width: 95px;
+}
+
+.footer_github {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    width: 30px;
+}
+
+.footer_github a {
+    font-family: "Tajawal Bold";
+    font-size: 1.3em;
+    color: black;
+    text-decoration: none;
+    margin:auto 0;
+}
+
+.footer_github_icon {
+    background-position: center center;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 4px;
+    background-image: url("./images/github.png");
+}
+
+@font-face {
+    font-family: "Silkscreen";
+    src: url("./fonts/Silkscreen/Silkscreen-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Tajawal";
+    src: url("./fonts/Tajawal/Tajawal-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Tajawal Bold";
+    src: url("./fonts/Tajawal/Tajawal-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
