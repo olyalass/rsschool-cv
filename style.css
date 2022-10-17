@@ -9,7 +9,7 @@ body {
 }
 
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     height: 80px;
@@ -49,6 +49,16 @@ header{
     font-family: "Tajawal Bold";
     margin-left: 40px;
     cursor: pointer;
+}
+
+.header_nav a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header_nav a:hover {
+    color: white;
 }
 
 main {
@@ -215,6 +225,10 @@ h3 {
     cursor: pointer;
 }
 
+.contacts_info a:hover {
+    color: var(--yellow-color);
+}
+
 .skills_container ul {
     padding-left: 0;
 }
@@ -258,6 +272,35 @@ h3 {
 
 .advanced {
     width: 75%;
+}
+
+.prof {
+    width: 100%;
+}
+
+.divider {
+    width: 70%;
+    margin: 10px auto;
+    height: 2px;
+    background-color: black;
+}
+
+.education_container ul{
+    padding-left: 10px;
+}
+
+.education_container li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.education_container li::before {
+    content: "\25A0"; 
+    color: var(--yellow-color); 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
 }
 
 .main_right {
@@ -311,9 +354,83 @@ span {
     cursor: ew-resize;
 }
 
+.projects_container {
 
+    padding: 10px;
+}
 
+.projects_container ul {
+    padding-left: 15px;
+    list-style: none;
+}
 
+.projects_container li {
+    margin-bottom: 10px;
+    font-family: "Tajawal Bold";
+}
+
+.projects_container a:hover {
+    color: var(--yellow-color);
+}
+
+.projects_container a {
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.projects_container li::before {
+    content: "\2713"; 
+    color: var(--yellow-color); 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+}
+
+footer {
+    width: 100%;
+    background-color: var(--yellow-color);
+    height: 100px;
+}
+
+.footer_container {
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.footer_info {
+    width: 95px;
+}
+
+.footer_github {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    width: 30px;
+}
+
+.footer_github a {
+    font-family: "Tajawal Bold";
+    font-size: 1.3em;
+    color: black;
+    text-decoration: none;
+    margin:auto 0;
+}
+
+.footer_github_icon {
+    background-position: center center;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 4px;
+    background-image: url("./images/github.png");
+}
 
 @font-face {
     font-family: "Silkscreen";
